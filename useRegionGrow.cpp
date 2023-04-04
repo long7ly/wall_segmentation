@@ -19,7 +19,7 @@
 int main() {
     // 读取点云数据
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
-    std::string PointCloudFileName = "0_1.pcd";
+    std::string PointCloudFileName = "./point_cloud_data/ply_wall/result1.pcd";
     pcl::io::loadPCDFile<pcl::PointXYZ>(PointCloudFileName, *cloud);
     std::cout << "Loaded " << cloud->size() << " data points from " << PointCloudFileName << std::endl;
     
